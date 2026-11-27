@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash: Turkey's Great Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1a12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; width: min(960px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #f7c873; touch-action: none; }
+  #hint { color: #f3d9a4; text-align: center; font-size: 13px; padding: 6px 8px 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540" aria-label="Gobble Dash: Turkey's Great Escape"></canvas>
+  <div id="hint">Space / W / &uarr; jump (twice for double jump) &middot; S / &darr; duck &middot; A / D adjust pace &middot; M mute &middot; R restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
